@@ -11,6 +11,8 @@
 		E24E7EFE263F8BA600980D80 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24E7EFD263F8BA600980D80 /* ContentView.swift */; };
 		E24E7F00263F8BA900980D80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E24E7EFF263F8BA900980D80 /* Assets.xcassets */; };
 		E24E7F03263F8BA900980D80 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E24E7F02263F8BA900980D80 /* Preview Assets.xcassets */; };
+		E2603F2A263F8FF4004972B2 /* MapV.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2603F29263F8FF4004972B2 /* MapV.swift */; };
+		E2603F2E263F946B004972B2 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2603F2D263F946B004972B2 /* Location.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,8 @@
 		E24E7EFF263F8BA900980D80 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E24E7F02263F8BA900980D80 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E24E7F04263F8BA900980D80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2603F29263F8FF4004972B2 /* MapV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapV.swift; sourceTree = "<group>"; };
+		E2603F2D263F946B004972B2 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +56,8 @@
 		E24E7EFA263F8BA600980D80 /* Nearby-Places */ = {
 			isa = PBXGroup;
 			children = (
+				E2603F2C263F942E004972B2 /* Location */,
+				E2603F28263F8FCA004972B2 /* View */,
 				E24E7EFB263F8BA600980D80 /* Nearby_PlacesApp.swift */,
 				E24E7EFD263F8BA600980D80 /* ContentView.swift */,
 				E24E7EFF263F8BA900980D80 /* Assets.xcassets */,
@@ -67,6 +73,22 @@
 				E24E7F02263F8BA900980D80 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E2603F28263F8FCA004972B2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E2603F29263F8FF4004972B2 /* MapV.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E2603F2C263F942E004972B2 /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				E2603F2D263F946B004972B2 /* Location.swift */,
+			);
+			path = Location;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +162,8 @@
 			files = (
 				E24E7EFE263F8BA600980D80 /* ContentView.swift in Sources */,
 				E24E7EFC263F8BA600980D80 /* Nearby_PlacesApp.swift in Sources */,
+				E2603F2E263F946B004972B2 /* Location.swift in Sources */,
+				E2603F2A263F8FF4004972B2 /* MapV.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

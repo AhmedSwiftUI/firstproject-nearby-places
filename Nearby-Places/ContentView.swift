@@ -8,9 +8,32 @@
 import SwiftUI
 
 struct ContentView: View {
+    @ObservedObject var locationC = TheLocation()
+    @State private var search: String = ""
+    
+    private func NearbyPlaces() {
+        
+       
+        
+        
+    }
     var body: some View {
-        Text("Hello, world!")
+        
+        ZStack(alignment: .top) {
+            
+            MapV()
+            
+            TextField("ابحث هنا", text: $search, onEditingChanged: { a in})
+            
+            
+            {
+               
+            }.textFieldStyle(RoundedBorderTextFieldStyle())
             .padding()
+            .offset()
+            
+            
+        }
     }
 }
 
