@@ -36,6 +36,8 @@ class Coordinator: NSObject, MKMapViewDelegate {
 
 struct MapV: UIViewRepresentable {
     
+    let marks: [Sign]
+    
     func makeUIView(context: Context) -> MKMapView {
         let map = MKMapView()
         map.showsUserLocation = true
@@ -48,6 +50,13 @@ struct MapV: UIViewRepresentable {
     }
     
     func updateUIView(_ uiView: MKMapView, context: Context) {
-        
+        updateNoteses(mapV: uiView)
+    }
+    
+    // الفنكشن updateNoteses مسؤول عن حذف التعليقات والتوضيحات في خانة البحث
+ private func updateNoteses(mapV: MKMapView) {
+    mapV.removeAnnotations(mapV.annotations)
+        let annorations = self.marks.map(Notes.init)
+        mapV.addAnnotations(annorations)
     }
 }
